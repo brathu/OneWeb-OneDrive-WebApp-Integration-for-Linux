@@ -74,6 +74,8 @@ xdg-open ~/OneDrive/Mappe.xlsx    # opens directly in Excel WebApp
 You can run the included uninstall script:
 
 ```bash
+curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/uninstall-oneweb.sh
+chmod +x install-oneweb.sh
 ./uninstall-oneweb.sh
 ```
 
@@ -86,6 +88,7 @@ rm -f ~/.local/share/applications/oneweb.desktop
 rm -f ~/.local/share/icons/oneweb.png
 rm -f ~/.config/systemd/user/oneweb.mount.service
 
+# Restore MIME defaults (to LibreOffice as fallback)
 xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
 xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
