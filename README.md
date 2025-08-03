@@ -34,6 +34,28 @@ This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from you
 
 ---
 
+## 📌 Assumptions (Voraussetzungen)
+
+This installer was written for a minimal, working setup.  
+It assumes that:
+
+1. Your `rclone` remote for OneDrive is named **`onedrive`**  
+   (You can check with `rclone listremotes`.)
+
+2. Your OneDrive is mounted at **`$HOME/OneDrive`**  
+   (The included systemd unit will mount it there.)
+
+3. You have **`google-chrome-stable`** installed  
+   (If you use Chromium, Brave, or Edge, edit `~/.local/bin/oneweb` after install.)
+
+4. Your desktop environment reads `.desktop` files from  
+   `~/.local/share/applications` and uses `xdg-mime` defaults.
+
+5. You restart your file manager (e.g. `thunar -q && thunar &`)  
+   after installation so the new application is picked up.
+
+---
+
 ## 🚀 Quick Install
 Save and run the installer:
 
