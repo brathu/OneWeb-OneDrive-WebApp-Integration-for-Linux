@@ -75,7 +75,7 @@ You can run the included uninstall script:
 
 ```bash
 curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/uninstall-oneweb.sh
-chmod +x install-oneweb.sh
+chmod +x uninstall-oneweb.sh
 ./uninstall-oneweb.sh
 ```
 
