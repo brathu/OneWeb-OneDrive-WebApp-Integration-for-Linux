@@ -60,7 +60,7 @@ It assumes that:
 Save and run the installer:
 
 ```bash
-curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/install-oneweb.sh
+curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/main/install-oneweb.sh
 chmod +x install-oneweb.sh
 ./install-oneweb.sh
 ```
@@ -96,7 +96,7 @@ xdg-open ~/OneDrive/Mappe.xlsx    # opens directly in Excel WebApp
 You can run the included uninstall script:
 
 ```bash
-curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/uninstall-oneweb.sh
+curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/main/uninstall-oneweb.sh
 chmod +x uninstall-oneweb.sh
 ./uninstall-oneweb.sh
 ```
