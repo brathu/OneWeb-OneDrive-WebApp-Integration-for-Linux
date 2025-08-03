@@ -1,7 +1,8 @@
-<div align="left" style="display: flex; align-items: center; gap: 10px;">
-  <img src="https://files.catbox.moe/o397se.png" alt="OneWeb Logo" width="60"/>
-  <h1>OneWeb – OneDrive WebApp Integration for Linux</h1>
-</div>
+<p align="center">
+  <img src="https://files.catbox.moe/o397se.png" alt="OneWeb Logo" width="160"/>
+</p>
+
+<h1 align="center">OneWeb – OneDrive WebApp Integration for Linux</h1>
 
 This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from your file manager into the **official Microsoft Office WebApps**, using `rclone` and Chrome's app mode. No sync clients, no Wine, no heavy GUI dependencies.
 
