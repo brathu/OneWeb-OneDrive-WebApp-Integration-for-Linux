@@ -38,7 +38,7 @@ This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from you
 Save and run the installer:
 
 ```bash
-curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/install-onedrive.webapp.sh
+curl -O https://raw.githubusercontent.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/refs/heads/main/install-oneweb.sh
 chmod +x install-oneweb.sh
 ./install-oneweb.sh
 ```
