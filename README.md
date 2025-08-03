@@ -34,7 +34,7 @@ This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from you
 
 ---
 
-## 📌 Assumptions (Voraussetzungen)
+## 📌 Assumptions
 
 This installer was written for a minimal, working setup.  
 It assumes that:
