@@ -2,7 +2,7 @@
   <img src="https://files.catbox.moe/o397se.png" alt="OneWeb Logo" width="160"/>
 </p>
 
-<h1 align="center">OneDrive WebApp Integration for Linux</h1>
+<h1 align="center">OneWeb – OneDrive WebApp Integration for Linux</h1>
 
 This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from your file manager into the **official Microsoft Office WebApps**, using `rclone` and Chrome's app mode. No sync clients, no Wine, no heavy GUI dependencies.
 
@@ -38,7 +38,7 @@ This project lets you open `.docx`, `.xlsx`, and `.pptx` files directly from you
 Save and run the installer:
 
 ```bash
-curl -O https://github.com/brathu/OneWeb-OneDrive-WebApp-Integration-for-Linux/blob/main/install-onedrive.webapp.sh
+curl -O https://raw.githubusercontent.com/YOUR_GITHUB/oneweb/main/install-oneweb.sh
 chmod +x install-oneweb.sh
 ./install-oneweb.sh
 ```
@@ -71,12 +71,24 @@ xdg-open ~/OneDrive/Mappe.xlsx    # opens directly in Excel WebApp
 ---
 
 ## 🧼 Uninstall
+You can run the included uninstall script:
+
+```bash
+./uninstall-oneweb.sh
+```
+
+Or remove manually:
+
 ```bash
 systemctl --user disable --now oneweb.mount.service
 rm -f ~/.local/bin/oneweb
 rm -f ~/.local/share/applications/oneweb.desktop
+rm -f ~/.local/share/icons/oneweb.png
 rm -f ~/.config/systemd/user/oneweb.mount.service
+
 xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
+xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
 ```
 
 ---
